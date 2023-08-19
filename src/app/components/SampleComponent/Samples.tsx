@@ -28,7 +28,7 @@ const Samples = () => {
           height={605}
         />
       </div>
-      <div className="w-[70%] z-50 m-[auto] flex items-center justify-between">
+      <div className="w-[75%] z-50 m-[auto] flex items-center justify-between">
         <Image src={"/71.png"} alt="sample" width={535} height={478} />
         <div className="max-w-[450px] space-y-6">
           <div className="max-w-[390px] text-[55px] leading-[66px] text-[#141414] font-bold">
