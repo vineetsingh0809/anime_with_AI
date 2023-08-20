@@ -10,7 +10,6 @@ import FancyFooter from "../components/Footer/Footer";
 const HomePage = () => {
   return (
     <div>
-      <Header />
       <HeroBanner />
       <Samples />
       <ComputerScreen />
