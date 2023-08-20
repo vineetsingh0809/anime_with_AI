@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HeroBanner = () => {
   return (
-    <div className="w-full bg-[#060622]">
+    <div className="w-full bg-[#060622] pt-20">
       <div className="mx-14 flex items-center justify-between">
         <div className="space-y-28 my-32">
           <BannerText
