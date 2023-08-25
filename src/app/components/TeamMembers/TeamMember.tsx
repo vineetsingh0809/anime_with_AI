@@ -32,5 +32,4 @@ const TeamMember = ({ imgSrc, memberName, memberDesignation }: TeamType) => {
     </div>
   );
 };
-
 export default TeamMember;

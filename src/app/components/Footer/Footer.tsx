@@ -39,16 +39,16 @@ const FancyFooter: React.FC = () => {
     { id: 3, icon: <FaGithub /> },
     { id: 4, icon: <FaFacebook /> },
   ];
-  return (
+   return (
     <footer>
-      <div className="bg-gray-800 text-white pt-10">
-        <div className="w-[90%] m-auto">
+      <div className="bg-gray-800 text-white py-10">
+        <div className="w-[90%] mx-auto text-center">
           <Image src={"/logo.png"} alt="logo" width={100} height={55} />
         </div>
-        <div className="w-[80%] pt-16 pb-8 m-auto flex items-center justify-between">
+        <div className="w-[80%] py-16 mx-auto flex flex-col md:flex-row items-center justify-between">
           {title.map((item) => (
-            <div key={item.id} className="text-[#C6C6C6]">
-              <h1 className="text-[32px] font-semibold leading-10 mb-5">
+            <div key={item.id} className="text-[#C6C6C6] mb-8 md:mb-0">
+              <h1 className="text-xl md:text-2xl font-semibold leading-6 md:leading-10 mb-5">
                 {item.title}
               </h1>
               <div className="space-y-2">
@@ -63,12 +63,14 @@ const FancyFooter: React.FC = () => {
         </div>
       </div>
       <div className="bg-[#282d32] text-white">
-        <div className="w-[80%] m-auto flex flex-col items-center justify-center pt-12 pb-8">
-          <h1 className="text-4xl font-medium leading">About Company</h1>
-          <div className="w-[60%] m-auto mt-5">
-            <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
-              ad expedita eos id rerum veniam neque sed sequi laudantium
+        <div className="w-[80%] py-12 mx-auto flex flex-col items-center justify-center">
+          <h1 className="text-2xl md:text-4xl font-medium leading-tight mb-5 md:mb-8">
+            About Company
+          </h1>
+          <div className="w-[90%] mx-auto">
+            <p className="text-sm md:text-base text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Beatae ad expedita eos id rerum veniam neque sed sequi laudantium
               repellendus in reprehenderit odit fugit, voluptates itaque!
               Excepturi provident amet distinctio iure quo dolorem commodi nulla
               quidem, enim inventore praesentium voluptas impedit illum debitis
@@ -76,10 +78,10 @@ const FancyFooter: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="w-[25%] m-auto pb-8 flex items-center justify-between">
+        <div className="w-[60%] py-8 mx-auto flex items-center justify-between">
           {icons.map((icon) => (
             <div
-              className="w-[40px] h-[40px] rounded-full border-2 flex items-center justify-center"
+              className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 flex items-center justify-center"
               key={icon.id}
             >
               <a href="#">{icon.icon}</a>

@@ -9,8 +9,8 @@ const MenuData = [
 
 const HeaderMenu = () => {
   return (
-    <div className="flex items-center space-x-12 text-lg font-medium">
-      <Image src="/logo.png" alt="logo" width={"88"} height={"31"} />
+    <div className="flex items-center space-x-2 md:space-x-4 lg:space-x-8 text-xs md:text-base font-medium">
+      <Image src="/logo.png" alt="logo" width={66} height={23} />
       {MenuData.map((item) => (
         <h2 key={item.id}>{item.data}</h2>
       ))}
