@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ButtonComponent from "../components/ButtonComponent/ButtonComponent";
 
-const LoginPage = () => {
+const login = () => {
   return (
     <div className="w-full h-[100vh] bg-[#D9D9D9] pt-32">
       <div className="w-[340px] m-auto mt-10">
@@ -63,4 +63,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default login;

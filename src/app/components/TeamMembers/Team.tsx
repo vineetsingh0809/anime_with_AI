@@ -28,12 +28,13 @@ const Team = () => {
       designation: "CHIEF EXECUTIVE OFFICER",
     },
   ];
+
   return (
-    <div className="bg-[#D9D9D9] relative">
-      <h1 className="text-4xl font-semibold leading-8 absolute top-12 left-20">
+    <div className="bg-[#D9D9D9] relative py-12 md:py-20">
+      <h1 className=" text-xl md:text-4xl font-semibold leading-8 absolute top-12 left-4 md:left-20">
         Team Members
       </h1>
-      <div className="w-[80%] m-auto flex items-center justify-between py-40">
+      <div className=" mt-7 w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] m-auto flex flex-col md:flex-row items-center justify-between md:py-20">
         {teamInfo.map((member) => (
           <TeamMember
             key={member.id}

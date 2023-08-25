@@ -23,20 +23,21 @@ const Services = () => {
     },
   ];
   return (
-    <div className="bg-[#060622]">
-      <div className="max-w-[90%] m-auto flex items-center justify-between py-32">
-        {servicesData.map((item) => (
-          <div key={item.id}>
-            <ServiceComponent
-              image={item.imgSrc}
-              title={item.title}
-              subTitle={item.sub_title}
-            />
-          </div>
-        ))}
+    <div className="bg-[#060622] py-12 md:py-20">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
+        <div className="grid gap-6 md:gap-12 lg:grid-cols-3">
+          {servicesData.map((item) => (
+            <div key={item.id} className="flex justify-center">
+              <ServiceComponent
+                image={item.imgSrc}
+                title={item.title}
+                subTitle={item.sub_title}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
-
 export default Services;
